@@ -1,0 +1,5 @@
+<%= params %>
+<% @items.each do |item| %>
+	<p><%= item.name %></p>
+	<p><%= button_to "Add Item", cart_items_path(item_id: item.id) %></p>
+<% end %>
